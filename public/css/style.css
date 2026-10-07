@@ -15,7 +15,10 @@ nav {
     background-color: #FFB8EF;
     padding: 15px;
     text-align: center;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav a {
@@ -36,7 +39,7 @@ nav a:hover {
     background: white;
     padding: 25px;
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
 ul {
@@ -76,7 +79,7 @@ table tr:hover {
     background: white;
     padding: 25px;
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
 p {
@@ -92,4 +95,103 @@ p {
         display: block;
         margin: 10px 0;
     }
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ffd3f5;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #FFB8EF;
+    box-shadow: 0 0 5px rgba(255, 184, 239, 0.8);
+}
+
+button,
+.btn {
+    display: inline-block;
+    background-color: #FFB8EF;
+    color: #444;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover,
+.btn:hover {
+    background-color: #f99cde;
+    color: white;
+}
+
+.btn-edit {
+    background-color: #ffd166;
+    color: #444;
+}
+
+.btn-edit:hover {
+    background-color: #f4bd3f;
+    color: white;
+}
+
+.btn-delete {
+    background-color: #ff6b81;
+    color: white;
+}
+
+.btn-delete:hover {
+    background-color: #e55069;
+}
+
+.error {
+    background-color: #ffe3e3;
+    color: #d63031;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.success {
+    background-color: #dff9e3;
+    color: #218c58;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }

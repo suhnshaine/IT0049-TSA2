@@ -16,7 +16,7 @@
         <a href="/tasks">Task List</a> |
         <a href="/profile">Profile</a> |
         <?php if (session()->get('logged_in')): ?>
-            <a href="<?= site_url('tasks/new') ?>">
+            <a class="btn" href="<?= site_url('tasks/new') ?>">
                 New Task
             </a> |
             <a href="<?= site_url('logout') ?>">

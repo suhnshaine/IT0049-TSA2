@@ -7,7 +7,7 @@
     <h1>Login</h1>
 
     <?php if(session()->getFlashdata('error')): ?>
-        <p style="color:red;">
+        <p class="error">
             <?= session()->getFlashdata('error') ?>
         </p>
     <?php endif; ?>
