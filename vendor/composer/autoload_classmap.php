@@ -8,6 +8,9 @@ $baseDir = dirname($vendorDir);
 return array(
     'App\\Controllers\\BaseController' => $baseDir . '/app/Controllers/BaseController.php',
     'App\\Controllers\\Home' => $baseDir . '/app/Controllers/Home.php',
+    'App\\Controllers\\Pages' => $baseDir . '/app/Controllers/Pages.php',
+    'App\\Models\\TaskModel' => $baseDir . '/app/Models/TaskModel.php',
+    'App\\Models\\UserModel' => $baseDir . '/app/Models/UserModel.php',
     'CodeIgniter\\API\\ApiException' => $vendorDir . '/codeigniter4/framework/system/API/ApiException.php',
     'CodeIgniter\\API\\BaseTransformer' => $vendorDir . '/codeigniter4/framework/system/API/BaseTransformer.php',
     'CodeIgniter\\API\\ResponseTrait' => $vendorDir . '/codeigniter4/framework/system/API/ResponseTrait.php',

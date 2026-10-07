@@ -102,6 +102,9 @@ class ComposerStaticInitf5cce40800fa5dae1504b9364f585e6a
     public static $classMap = array (
         'App\\Controllers\\BaseController' => __DIR__ . '/../..' . '/app/Controllers/BaseController.php',
         'App\\Controllers\\Home' => __DIR__ . '/../..' . '/app/Controllers/Home.php',
+        'App\\Controllers\\Pages' => __DIR__ . '/../..' . '/app/Controllers/Pages.php',
+        'App\\Models\\TaskModel' => __DIR__ . '/../..' . '/app/Models/TaskModel.php',
+        'App\\Models\\UserModel' => __DIR__ . '/../..' . '/app/Models/UserModel.php',
         'CodeIgniter\\API\\ApiException' => __DIR__ . '/..' . '/codeigniter4/framework/system/API/ApiException.php',
         'CodeIgniter\\API\\BaseTransformer' => __DIR__ . '/..' . '/codeigniter4/framework/system/API/BaseTransformer.php',
         'CodeIgniter\\API\\ResponseTrait' => __DIR__ . '/..' . '/codeigniter4/framework/system/API/ResponseTrait.php',
