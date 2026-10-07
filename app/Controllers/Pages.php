@@ -13,6 +13,7 @@ class Pages extends BaseController
 
         $data['tasks'] = $taskModel
             ->where('task_date', date('Y-m-d'))
+            ->where('is_archived', 0)
             ->findAll();
 
         return view('welcome', $data);
@@ -23,6 +24,7 @@ class Pages extends BaseController
         $taskModel = new TaskModel();
 
         $data['tasks'] = $taskModel
+            ->where('is_archived', 0)
             ->orderBy('task_date', 'ASC')
             ->findAll();
 
